@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Parte 1 - Mango Alberto</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+      body {
+        background: linear-gradient(135deg, #1a1a1a, #000);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        font-family: 'MedievalSharp', cursive;
+        color: #9B733C;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 2s ease-in-out;
+      }
+      .story-container {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        border: 3px solid green;
+        padding: 20px;
+        max-width: 800px;
+        margin: 50px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .story-container:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      }
+      .story-container p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        animation: fadeIn 3s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #9B733C;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        font-family: 'MedievalSharp', cursive;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .back-button:hover {
+        background-color: #7a5a2f;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    <div class="story-container">
+        <h1 style="color:#9B733C">Mango Alberto - O Imperador de Limeira</h1>
+        <p>
+          <strong>O Imperador Mango Alberto e a Ascensão do Feudo de Limeira</strong><br><br>
+          Em um tempo distante, na vasta e misteriosa terra de Limeira, onde os campos se estendiam até onde a vista alcançava e os rios serpenteavam pelas florestas densas, houve uma ascensão inesperada. Um homem, de origens humildes, mas ambições grandiosas, levantou-se para governar. Seu nome era Mango Alberto.<br><br>
+  
+          Mango Alberto não era um simples nobre, ele era um visionário. Com um espírito feroz e uma inteligência estratégica, ele tomou a cidade de Limeira com uma rapidez que surpreendeu até os mais poderosos. Começou sua jornada com um exército pequeno, mas com uma determinação que não conhecia limites. Em poucos anos, Mango Alberto conquistou as regiões vizinhas e proclamou-se Imperador de Limeira, erguendo um grande castelo no centro da cidade, um símbolo de seu domínio absoluto.<br><br>
+  
+          Porém, como todo grande governante, ele sabia que o poder precisava ser mantido. Para garantir que sua autoridade fosse reconhecida em cada esquina de Limeira, Mango Alberto teve uma ideia ousada: transformar seus amigos de longa data em servos infames, aqueles cujas ações, embora subestimadas por outros, seriam essenciais para o sucesso de seu reinado. <br><br>
+  
+          Os amigos de Mango Alberto eram figuras singulares, cada um com um talento único, e o imperador sabia exatamente como utilizá-los. <br><br>
+  
+          <strong>Tupac</strong> era o estrategista, o conselheiro fiel. De uma astúcia ímpar, ele era o braço direito do imperador. Sua inteligência e habilidade de manipulação política o tornaram indispensável no jogo das alianças e traições que eram comuns na corte. Tupac, embora sempre um amigo leal, tornava-se cada vez mais obcecado por poder, suas ações e decisões muitas vezes turvadas pela sede de controle.<br><br>
+  
+          <strong>Smergulus</strong> era o líder das forças militares. Sua habilidade com a espada era lendária, mas era sua brutalidade no campo de batalha que o destacava. Sem misericórdia, ele conquistava cidades e destruía vilarejos, deixando um rastro de terror. Mango Alberto sabia que Smergulus seria a chave para garantir a expansão de seu feudo, e assim ele foi nomeado comandante das forças imperiais.<br><br>
+  
+          <strong>MClovin</strong>, o mais carismático entre eles, era responsável pela diplomacia. Seu sorriso e suas palavras suaves encantavam até os inimigos mais ferrenhos. Mas por trás dessa fachada, ele era um mestre da manipulação psicológica. Usava seu charme para formar alianças temporárias, espalhar boatos e enfraquecer qualquer resistência interna ao império de Mango Alberto.<br><br>
+  
+          <strong>Careca</strong>, com sua vasta sabedoria sobre as terras de Limeira, foi nomeado o responsável pelos assuntos internos. Ele organizava as cidades, fiscalizava os camponeses e garantias que as colheitas se mantivessem em crescimento constante. Seu conhecimento sobre os antigos caminhos da cidade o tornava essencial para a logística do império, mas sua lealdade a Mango Alberto era questionada por muitos, pois ele frequentemente colocava os interesses do feudo acima de tudo.<br><br>
+  
+          <strong>Marcelo</strong>, o engenheiro e inventor, foi o criador das máquinas de guerra que deram ao império de Mango Alberto uma vantagem tecnológica. Suas invenções, como catapultas, torres de cerco e armadilhas, eram temidas por todas as cidades ao redor. Contudo, Marcelo se tornava cada vez mais obcecado por suas criações, negligenciando as necessidades humanas e causando danos imprevistos à população civil.<br><br>
+  
+          <strong>Chargas</strong>, por fim, era o mago do império. Mestre das artes arcanas, ele foi responsável por trazer uma aura de misticismo à corte de Mango Alberto. Suas feitiçarias e encantamentos garantiam que o império fosse protegido contra qualquer ameaça sobrenatural, mas também o tornaram um tanto temido pela população, que começava a se questionar se o mago estava manipulando mais do que o imperador queria.<br><br>
+  
+          Juntos, esses homens formavam o núcleo duro do regime de Mango Alberto. No entanto, à medida que o império de Limeira crescia, também cresciam as tensões entre os servos infames. A ambição de cada um deles não tinha limites e, embora fossem leais ao imperador, suas próprias intrigas começavam a se desenrolar, criando um ambiente de constante desconfiança e traição.<br><br>
+  
+          Enquanto isso, Mango Alberto assistia de seu trono de marfim, observando como os laços de amizade e lealdade eram corroídos pelo poder. Ele sabia que, para manter seu feudo intacto, precisaria manipular os destinos de seus amigos, transformando-os em peças de um jogo onde ele era o único verdadeiro vencedor.<br><br>
+  
+          Mas o que o imperador não sabia era que, no silêncio de seu castelo, uma revolta começava a se formar. Pequenos focos de resistência se espalhavam pelas sombras, alimentados pelas desilusões e traições daqueles que um dia serviram ao seu império. E o futuro de Limeira, assim como o de Mango Alberto, estava mais uma vez em risco.<br><br>
+  
+          O feudo de Limeira estava em um caminho perigoso, e só o tempo diria se o imperador conseguiria manter sua posição ou se sucumbiria à própria ambição.<br><br>
+  
+          <strong>Fim.</strong>
+      </p>
+    </div>
+  </body>
+</html>

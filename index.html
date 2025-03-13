@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Deciclopédia da Manga</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+      body {
+        background: linear-gradient(135deg, #1a1a1a, #000);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        font-family: 'MedievalSharp', cursive;
+        color: #9B733C;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 2s ease-in-out;
+      }
+      .story-section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .story-section:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.02);
+      }
+      .story-section:nth-child(1) {
+        border-color: green;
+      }
+      .story-section:nth-child(2) {
+        border-color: blue;
+      }
+      .story-section:nth-child(3) {
+        border-color: orange;
+      }
+      .story-container {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        border: 3px solid;
+        padding: 20px;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .story-container:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      }
+      .story-container p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        animation: fadeIn 3s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .nav-buttons {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: flex;
+        gap: 10px;
+      }
+      .nav-buttons button {
+        background-color: #9B733C;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        font-family: 'MedievalSharp', cursive;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .nav-buttons button:hover {
+        background-color: #7a5a2f;
+        transform: translateY(-5px);
+      }
+      .nav-buttons button:active {
+        transform: translateY(0);
+      }
+      .scroll-down {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+        color: #9B733C;
+        animation: bounce 2s infinite;
+        cursor: pointer;
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        40% {
+          transform: translateX(-50%) translateY(-20px);
+        }
+        60% {
+          transform: translateX(-50%) translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Botões de Navegação -->
+    <div class="nav-buttons">
+      <button onclick="window.location.href='parte1.html'">Parte 1</button>
+      <button onclick="window.location.href='parte2.html'">Parte 2</button>
+      <button onclick="window.location.href='parte3.html'">Parte 3</button>
+    </div>
+
+    <!-- Parte 1 -->
+    <section class="story-section" onclick="window.location.href='parte1.html'">
+      <div class="story-container">
+        <h1>Mango Alberto - O Imperador de Limeira</h1>
+        <p>
+          <strong>O Imperador Mango Alberto e a Ascensão do Feudo de Limeira</strong><br><br>
+          Em um tempo distante, na vasta e misteriosa terra de Limeira, onde os campos se estendiam até onde a vista alcançava e os rios serpenteavam pelas florestas densas, houve uma ascensão inesperada. Um homem, de origens humildes, mas ambições grandiosas, levantou-se para governar. Seu nome era Mango Alberto.<br><br>
+          <!-- Restante do texto... -->
+        </p>
+      </div>
+    </section>
+
+    <!-- Parte 2 -->
+    <section class="story-section" onclick="window.location.href='parte2.html'">
+      <div class="story-container">
+        <h1>A Queda de Mango</h1>
+        <p>
+          <strong>O Retorno de Tupac</strong><br><br>
+          Após anos de domínio absoluto e crescimento descontrolado, a ascensão de Mango Alberto chegou ao seu ponto culminante. A cidade de Limeira se tornara um feudo opressor, governado por sua tirania. Mas como todo império, até mesmo o mais forte precisa enfrentar os ventos da mudança.<br><br>
+          <!-- Restante do texto... -->
+        </p>
+      </div>
+    </section>
+
+    <!-- Parte 3 -->
+    <section class="story-section" onclick="window.location.href='parte3.html'">
+      <div class="story-container">
+        <h1>A Queda de Mango: A Vingança Sombria</h1>
+        <p>
+          <strong>O Destino de Mango</strong><br><br>
+          Após a queda de seu império e a perda de tudo o que ele havia conquistado, Mango Alberto foi forçado a viver na extrema pobreza. A cidade de Limeira, que um dia fora governada por sua mão de ferro, agora não passava de uma lembrança distante. O grande imperador se viu desprovido de riquezas e aliados, abandonado e relegado a uma vida miserável nas ruas de São Paulo.<br><br>
+          <!-- Restante do texto... -->
+        </p>
+      </div>
+    </section>
+
+    <!-- Ícone de rolagem -->
+    <div class="scroll-down" onclick="scrollToNextSection()">▼</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      // Função para rolar para a próxima seção
+      function scrollToNextSection() {
+        const sections = document.querySelectorAll('.story-section');
+        let currentSection = null;
+
+        sections.forEach((section, index) => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            currentSection = index;
+          }
+        });
+
+        if (currentSection !== null && currentSection < sections.length - 1) {
+          sections[currentSection + 1].scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    </script>
+  </body>
+</html>
